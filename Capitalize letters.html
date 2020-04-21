@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize letters</title>
+</head>
+<body>
+    <h1>Capitalize Letters</h1>
+    <h1 id="inp">i love javascript</h1>
+    <h1 id="out"></h1>
+    <script>
+        function capLetter(){
+            var inp = document.getElementById('inp').innerHTML;
+            var Arr = inp.toLowerCase().split(' ');
+            for(let i = 0; i < Arr.length; i++){
+                Arr[i] = Arr[i].substring(0, 1).toUpperCase() + Arr[i].substring(1);
+            }
+            return Arr.join(' ');
+        }
+        var z = capLetter();
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

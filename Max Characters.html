@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Character</title>
+</head>
+<body>
+    <h1>Max Character</h1>
+    <h1 id="inp">jAvascript</h1>
+    <h1 id="out"></h1>
+    <script>
+        function maxCharacter(){
+            var inp = document.getElementById('inp').innerHTML;
+            const charMap = {};
+            let maxNum = 0;
+            let maxChar = '';
+            inp.toLowerCase().split('').forEach(function(char){
+                if(charMap[char]){
+                    charMap[char]++;
+                }else{
+                    charMap[char] = 1;
+                }
+            });
+            var txt = '';
+            for(let char in charMap){
+                if(charMap[char] > maxNum){
+                    maxNum = charMap[char];
+                    maxChar = char;
+                }
+            }
+            return maxChar;
+        }
+        var z = maxCharacter();
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

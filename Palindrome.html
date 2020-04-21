@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallindrome</title>
+</head>
+<body>
+    <h1>Pallindrome</h1>
+    <h2 id="inp">Malayalam</h2>
+    <h2 id="out"></h2>
+    <script>
+        let strin = myPallindrome();
+        let inpu = document.getElementById('inp').innerHTML;
+        if (strin.toLowerCase() == inpu.toLowerCase()){
+            document.getElementById('out').innerHTML = 'is a Pallindrome';
+        }else{
+            document.getElementById('out').innerHTML = 'is NOT a Pallindrome';
+        }
+        function myPallindrome(){
+            let str = document.getElementById('inp').innerHTML;
+            let x = str.split('');
+            let y = x.reverse();
+            let z = y.join('');
+            return z;
+        }
+    </script>
+</body>
+</html>

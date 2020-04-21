@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Reverse</title>
+</head>
+<body>
+    <h1>Number Reverse</h1>
+    <h1 id="inp">1295</h1>
+    <h1 id="out"></h1>
+    <script>
+        function numReverse(){
+            var inp = document.getElementById('inp').innerHTML;
+            var txt = inp.toString();
+            var revString = txt.split('').reverse().join('');
+            return parseInt(revString);
+        }
+        var z = numReverse();
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

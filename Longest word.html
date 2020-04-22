@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Word</title>
+</head>
+<body>
+    <h1>Longest Word</h1>
+    <h1 id="inp">Hello my name is Syed Hammad.</h1>
+    <h1 id="out"></h1>
+    <script>
+        function longestWord(){
+            var inp = document.getElementById('inp').innerHTML;
+            var Arr = inp.toLowerCase().match(/[a-z0-9]+/g);
+            var temp = 0;
+            var sorted = Arr.sort(function (a,b){
+                return b.length - a.length;
+            });
+            // for(let i = 1; i < Arr.length; i++){
+            //     for(let j = 0; j < i; j++){
+            //         let len = Arr[j].length;
+            //         let len1 = Arr[i].length;
+            //         if(len < len1){
+            //             temp = Arr[j];
+            //             Arr[j] = Arr[i];
+            //             Arr[i] = temp;
+            //         }
+            //     }
+            // }
+            var Longest = sorted.filter(function(word){
+                return word.length === Arr[0].length;
+            });
+            if(Longest.length === 1){
+                return Arr[0];
+            }else{
+            return Longest;
+            }
+        }
+        var z = longestWord();
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

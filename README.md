@@ -37,11 +37,11 @@
     <b>No. 10:</b> <ins>ANAGRAM</ins> <br>
     Anagrams are words that contain the same letters. Return true if anagram and false if not.<br>
     Eg. 'elbow' --- 'below'<br>
-    Eg. 'Dormitory' --- 'dirty room##'
+    Eg. 'Dormitory' --- 'dirtyroom##'
     <br>
     <br>
     <b>No. 11:</b> <ins>LETTER CHANGES</ins> <br>
-    Change every letter of the string to the one that follows it and capitalize the vowels.
+    Change every letter of the string to the one that follows it.
     Hint: Z should turn to A
     Eg. 'hello there' === 'Ifmmp UIfsf'
     <br>

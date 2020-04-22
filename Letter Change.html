@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Changes</title>
+</head>
+<body>
+    <h1>Letter Changes</h1>
+    <h1 id="inp">Hello ThereZ</h1>
+    <h1 id="out"></h1>
+    <script>
+        var inp = document.getElementById('inp').innerHTML;
+        function LetterChanges(st){
+            var str = st.replace(/[a-z]/gi, function(char){
+                if(char === 'z'){
+                    return 'a';
+                }else if(char === 'Z'){
+                    return 'A';
+                }  else{
+                    let ne = String.fromCharCode(char.charCodeAt() + 1);
+                    return ne;
+                }
+            });
+            return str;
+        }
+        var z = LetterChanges(inp);
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+</head>
+<body>
+    <h1>Anagram Words</h1>
+    <h1 id="inp">Dormitory and dirtyroom</h1>
+    <h1 id="out"></h1>
+    <script>
+        var str = document.getElementById('inp').innerHTML;
+        var St = str.split(' ');
+        var str1 = St[0].toString().replace(/[^\w]/g, '');
+        var str2 = St[2].toString().replace(/[^\w]/g, '');
+        var z = Anagram(str1, str2);
+        document.getElementById('out').innerHTML = z;
+        function Anagram(St1 , St2){
+            var S1 = St1.toLowerCase().split('').sort();
+            var S2 = St2.toLowerCase().split('').sort();
+            if(S1.toString() === S2.toString()){
+                return 'They are Anagram';
+            }else{
+                return 'They are NOT Anagram';
+            }
+        }
+    </script>
+</body>
+</html>

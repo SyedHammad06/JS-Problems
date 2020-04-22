@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Chunking</title>
+</head>
+<body>
+    <h1>Array Chunking</h1>
+    <h1 id="inp">[1,2,3,4,5,6,7] size = 3</h1>
+    <h1 id="out"></h1>
+    <script>
+        function chunckArray(Arr, len){
+            var chunck = [];
+            var i = 0;
+            while(i < Arr.length){
+                chunck.push('[' + Arr.slice(i , i + len) + ']');
+                i += len;
+            }
+            return '[' + chunck + ']';
+        }
+        var z = chunckArray([1,2,3,4,5,6,7], 3);
+        document.getElementById('out').innerHTML = z;
+    </script>
+</body>
+</html>

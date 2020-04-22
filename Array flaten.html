@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Flaten</title>
+</head>
+<body>
+    <h1>Array Flaten</h1>
+    <h1 id="inp">[[1,2,3],[4,5,6],[7]]</h1>
+    <h1 id="out"></h1>
+    <script>
+        var inp = document.getElementById('inp').innerHTML;
+        var Arr = [];
+        function arrFlaten(Chunck){
+            for(let i = 0; i < Chunck.length; i ++){
+                Arr[i] = Chunck[i];
+            }
+            return Arr;
+        }
+        var z = arrFlaten([[1,2,3],[4,5,6],[7]]);
+        document.getElementById('out').innerHTML = '[' + z + ']';
+    </script>
+</body>
+</html>

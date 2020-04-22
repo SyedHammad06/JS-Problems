@@ -20,6 +20,32 @@
     <br>
     <b>No. 6:</b> <ins>FizzBuzz</ins> <br>
     From numbers 1-100 print every multiple of 3 as a Fizz and every multiple of 5 as a Buzz and multiples of 3 and 5 as FizzBuzz.<br>
+    <br>
+    <b>No. 7:</b> <ins>LONGEST WORD</ins> <br>
+    Return the longest word of a string. Eg. longestWord('Hi there, my name is Hammad.') --- Output. hammad<br>
+    <br>
+    <b>No. 8:</b> <ins>ARRAY CHUNKING</ins> <br>
+    Split an array into chunked arrays of a specific length.
+    Eg. chunkArray([1, 2, 3, 4, 5, 6, 7], 3) --- Output: [[1, 2, 3],[4, 5, 6],[7]]
+    <br>
+    <br>
+    <b>No. 9:</b> <ins>FLATTEN ARRAY</ins> <br>
+    Take an array of arrays and flatten to a single array.
+    Eg. [[1, 2], [3, 4], [5, 6], [7]] --- Output: [1, 2, 3, 4, 5, 6, 7]
+    <br>
+    <br>
+    <b>No. 10:</b> <ins>ANAGRAM</ins> <br>
+    Anagrams are words that contain the same letters. Return true if anagram and false if not.<br>
+    Eg. 'elbow' --- 'below'<br>
+    Eg. 'Dormitory' --- 'dirty room##'
+    <br>
+    <br>
+    <b>No. 11:</b> <ins>LETTER CHANGES</ins> <br>
+    Change every letter of the string to the one that follows it and capitalize the vowels.
+    Hint: Z should turn to A
+    Eg. 'hello there' === 'Ifmmp UIfsf'
+    <br>
+    <br>
 # 
 ### Note: if you have to make any changes to my file open a side branch with your name copy paste my code and make the changes.<br>
 # 
